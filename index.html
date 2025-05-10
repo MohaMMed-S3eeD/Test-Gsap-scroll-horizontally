@@ -8,13 +8,22 @@
   </head>
   <body class="overflow-x-hidden w-fit">
     <main
-      class="flex flex-col gap-10 items-center justify-center w-screen h-screen bg-gray-950 text-white"
+      class="relative flex flex-col items-center justify-center gap-10 w-screen h-screen bg-gray-950 text-white"
     >
-      <h1
-        class="title h1 flex items-center justify-center text-center text-[2rem] text-[clamp(3rem, 10vw, 7rem)] font-bold text-white bg-gradient-to-r from-amber-50 to-emerald-900 bg-clip-text text-transparent"
+      <h4
+        class="text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-50 to-emerald-900 font-bold"
+        style="font-size: clamp(3rem, 10vw, 3rem)"
       >
-        GSAP Horizontal Scroll Demonstration
-      </h1>
+        GSAP Horizontal Scroll
+      </h4>
+
+      <div class="flex items-center justify-center">
+        <img
+          src="./mouse (2).png"
+          alt="Scroll Down Indicator"
+          class="mouse absolute bottom-7 left-1/2 w-7 h-7 -translate-x-1/2"
+        />
+      </div>
     </main>
 
     <div
@@ -23,17 +32,118 @@
       <div
         class="slide w-screen box1 h-screen bg-emerald-50 text-black flex items-center justify-center"
       >
-        Slide Panel 1
+        <div
+          class="flex flex-col md:flex-row items-center justify-center md:justify-around w-full h-full p-8 md:p-12 lg:p-16 gap-8 md:gap-12"
+        >
+          <!-- Text Section (Left on md and up, Top on sm) -->
+          <div class="w-full md:w-6/12 text-center md:text-left">
+            <h2
+              class="h2-sec2 text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 text-emerald-700"
+            >
+              Welcome to Our Modern Space
+            </h2>
+            <p
+              class="p1-sec2 text-base sm:text-lg lg:text-xl text-gray-700 mb-4"
+            >
+              Experience cutting-edge design and seamless user interaction. This
+              panel showcases a
+              <span
+                class="span1-sec2 relative font-semibold text-emerald-900 px-2 py-1 after:content-[''] after:absolute after:inset-0 after:z-[-1] after:bg-gradient-to-tr after:from-emerald-200 after:to-transparent after:rounded-lg after:blur-[3px] after:-rotate-1 after:scale-x-[1.05] after:scale-y-[0.8]"
+                >fresh and contemporary</span
+              >
+              approach to web content.
+            </p>
+            <p class="p2-sec2 text-sm sm:text-base lg:text-lg text-gray-600">
+              Explore the features and enjoy the journey through our
+              innovatively designed sections. We focus on clarity, aesthetics,
+              and performance.
+            </p>
+          </div>
+          <!-- Image Section (Right on md and up, Bottom on sm) -->
+          <div class="img1-sec2 w-full sm:w-3/4 md:w-5/12 flex justify-center">
+            <img
+              src="https://picsum.photos/seed/abstract/600/400"
+              alt="Abstract modern design"
+              class="rounded-xl shadow-2xl object-cover w-full h-auto max-h-[300px] md:max-h-[350px] lg:max-h-[400px]"
+            />
+          </div>
+        </div>
       </div>
       <div
         class="slide w-screen box2 h-screen bg-emerald-900 text-white flex items-center justify-center"
       >
-        Slide Panel 2
+        <div
+          class="flex flex-col md:flex-row-reverse items-center justify-center md:justify-around w-full h-full p-8 md:p-12 lg:p-16 gap-8 md:gap-12"
+        >
+          <!-- Image Section (Right on md and up, Top on sm) -->
+          <div class="w-full sm:w-3/4 md:w-5/12 flex justify-center">
+            <img
+              src="https://picsum.photos/seed/tech/600/400"
+              alt="Modern technology workspace"
+              class="rounded-xl shadow-2xl object-cover w-full h-auto max-h-[300px] md:max-h-[350px] lg:max-h-[400px]"
+            />
+          </div>
+          <!-- Text Section (Left on md and up, Bottom on sm) -->
+          <div class="w-full md:w-6/12 text-center md:text-left">
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 text-white"
+            >
+              Innovative Solutions for a Digital World
+            </h2>
+            <p class="text-base sm:text-lg lg:text-xl text-gray-200 mb-4">
+              We specialize in creating dynamic and responsive web experiences.
+              Our approach combines modern design principles with
+              <span
+                class="relative font-semibold text-green-900 px-2 py-1 after:content-[''] after:absolute after:inset-0 after:z-[-1] after:bg-gradient-to-tr after:from-[#ecfdf5] after:to-transparent after:rounded-lg after:blur-[3px] after:-rotate-1 after:scale-x-[1.05] after:scale-y-[0.8]"
+                >state-of-the-art</span
+              >
+              technology to bring your vision to life.
+            </p>
+            <p class="text-sm sm:text-base lg:text-lg text-gray-300">
+              Discover how our tailored services can help you achieve your
+              business objectives and stand out in the competitive market. We
+              are committed to excellence and client satisfaction.
+            </p>
+          </div>
+        </div>
       </div>
       <div
         class="slide w-screen box3 h-screen bg-amber-50 text-black flex items-center justify-center"
       >
-        Slide Panel 3
+        <div
+          class="flex flex-col md:flex-row items-center justify-center md:justify-around w-full h-full p-8 md:p-12 lg:p-16 gap-8 md:gap-12"
+        >
+          <!-- Text Section (Left on md and up, Top on sm) -->
+          <div class="w-full md:w-6/12 text-center md:text-left">
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 text-gray-800"
+            >
+              Crafting Digital Experiences
+            </h2>
+            <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-4">
+              Our passion is to build intuitive and engaging digital products.
+              We focus on user-centric design and
+              <span
+                class="relative font-semibold text-amber-700 px-2 py-1 after:content-[''] after:absolute after:inset-0 after:z-[-1] after:bg-gradient-to-tr after:from-[#fffbeb] after:to-transparent after:rounded-lg after:blur-[3px] after:-rotate-1 after:scale-x-[1.05] after:scale-y-[0.8]"
+                >cutting-edge</span
+              >
+              development to deliver solutions that resonate.
+            </p>
+            <p class="text-sm sm:text-base lg:text-lg text-gray-500">
+              Let us transform your ideas into reality with our expertise in web
+              and mobile application development. We strive for pixel-perfect
+              execution.
+            </p>
+          </div>
+          <!-- Image Section (Right on md and up, Bottom on sm) -->
+          <div class="w-full sm:w-3/4 md:w-5/12 flex justify-center">
+            <img
+              src="https://picsum.photos/seed/nature/600/400"
+              alt="Nature inspired design"
+              class="rounded-xl shadow-2xl object-cover w-full h-auto max-h-[300px] md:max-h-[350px] lg:max-h-[400px]"
+            />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -44,11 +154,6 @@
         class="w-screen h-screen bg-black text-white flex items-center justify-center"
       >
         Vertical Content Block 1
-      </div>
-      <div
-        class="w-full h-screen bg-slate-500 text-white flex items-center justify-center"
-      >
-        Vertical Content Block 2
       </div>
     </div>
 
